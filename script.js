@@ -3,6 +3,8 @@ const numInput = document.getElementById("numInput");
 const convertedNum = document.getElementById("convertedNum");
 const submitBtn = document.getElementById("submit");
 
+//submitBtn.addEventListener("click", convert)
+
 submitBtn.addEventListener("click", function (event) {
     event.preventDefault();
     //convertedNum .innerHTML = numInput.value
@@ -246,6 +248,7 @@ submitBtn.addEventListener("click", function (event) {
             convertedNum.innerHTML = ones[numArray[0]] + " million " + ones[numArray[1]] + " hundred " + " and " + prefixes[numArray[2]] + " - " + ones[numArray[3]] + " thousand " + ones[numArray[4]] + " hundred " + " and " + prefixes[numArray[5]]
         } else if (numArray[1] != 0 && +numArray[2] >= 2 && +numArray[5] >= 2) {                                                                                         // 1.1.21.1.21 - 9.9.99.9.99
             convertedNum.innerHTML = ones[numArray[0]] + " million " + ones[numArray[1]] + " hundred " + " and " + prefixes[numArray[2]] + " - " + ones[numArray[3]] + " thousand " + ones[numArray[4]] + " hundred " + " and " + prefixes[numArray[5]] + " - " + ones[numArray[6]]
+
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
